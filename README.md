@@ -1,89 +1,350 @@
-# HackPilot (HACKPRIX-3.00)
+# 🎙️ Auralis AI
 
-HackPilot is an opinionated hackathon planning agent built with Vite + React + Tailwind (shadcn-style).
-It turns a problem statement into a structured, time-aware project plan with architecture diagrams, MVP task boards, and a real-time AI co‑pilot.
+> **Build intelligent voice agents that listen, understand, and respond naturally in real time.**
+
+![Next.js](https://img.shields.io/badge/Next.js-15-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+![Google Gemini](https://img.shields.io/badge/AI-Google%20Gemini-blue)
+![Sarvam AI](https://img.shields.io/badge/STT-Sarvam%20AI-orange)
+![ElevenLabs](https://img.shields.io/badge/TTS-ElevenLabs-purple)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
-**Highlights**
-- Clean, responsive React UI using shadcn-style components
-- AI-powered plan generation (integrates with Generative AI client)
-- Task board, architecture tab, health dashboard, and team onboarding flows
-- Themeable (dark/light) and production-ready build via Vite
+## 🚀 Overview
 
-**Quickstart**
-1. Install dependencies
+Auralis AI is a next-generation voice AI platform that enables users to create, customize, and deploy intelligent conversational voice agents.
+
+Powered by **Google Gemini**, **Sarvam AI**, and **ElevenLabs**, Auralis provides natural voice interactions through real-time speech recognition, contextual reasoning, and expressive speech synthesis.
+
+Whether you're building customer support assistants, personal AI companions, educational tutors, or business automation agents, Auralis AI delivers a seamless voice-first experience.
+
+---
+
+## ✨ Features
+
+### 🎤 Real-Time Voice Conversations
+
+* Speech-to-text using Sarvam AI
+* Low-latency voice processing
+* Continuous conversation flow
+* Multi-language speech support
+
+### 🧠 AI-Powered Intelligence
+
+* Google Gemini integration
+* Context-aware responses
+* Conversation memory
+* Dynamic prompt engineering
+
+### 🤖 Custom Voice Agents
+
+* Create personalized AI assistants
+* Custom personalities and instructions
+* Multiple agent configurations
+* Specialized use-case agents
+
+### 🔊 Natural Voice Synthesis
+
+* ElevenLabs voice generation
+* High-quality neural voices
+* Human-like speech delivery
+* Configurable voice settings
+
+### 📊 Analytics Dashboard
+
+* Conversation tracking
+* Agent performance metrics
+* Usage insights
+* Interaction statistics
+
+### 🔐 Secure & Scalable
+
+* Authentication support
+* Protected API routes
+* Environment-based secrets
+* Production-ready architecture
+
+---
+
+# 🏗️ Architecture
+
+User Speech
+↓
+Sarvam AI (Speech-to-Text)
+↓
+Google Gemini (Reasoning Engine)
+↓
+Generated Response
+↓
+ElevenLabs (Text-to-Speech)
+↓
+Audio Playback
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* Next.js 15
+* React
+* TypeScript
+* Tailwind CSS
+* Radix UI
+* Lucide React
+
+### AI & Voice
+
+* Google Gemini
+* Sarvam AI
+* ElevenLabs
+
+### Backend
+
+* Next.js API Routes
+* Axios
+* Server Actions
+
+### Storage & State
+
+* PostgreSQL
+* Supabase
+* React Context
+* Local Storage
+
+### Authentication
+
+* NextAuth.js
+* Google OAuth
+
+---
+
+## 📂 Project Structure
+
+```bash
+Auralis-AI/
+│
+├── app/
+│   ├── api/
+│   ├── dashboard/
+│   ├── agents/
+│   └── settings/
+│
+├── components/
+│
+├── hooks/
+│
+├── lib/
+│
+├── public/
+│
+├── styles/
+│
+├── prisma/
+│
+└── types/
+```
+
+## ⚡ Quick Start
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/Pravehaspa/AURALIS-AI.git
+
+cd AURALIS-AI
+```
+
+### 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-2. Run the dev server
+### 3. Configure Environment Variables
+
+Create:
+
+```bash
+.env.local
+```
+
+Add:
+
+```env
+# Gemini
+GEMINI_API_KEY=
+
+# Sarvam AI
+SARVAM_API_KEY=
+
+# ElevenLabs
+ELEVENLABS_API_KEY=
+
+# Database
+DATABASE_URL=
+
+# NextAuth
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=
+
+# Google OAuth
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+```
+
+### 4. Run Development Server
 
 ```bash
 npm run dev
 ```
 
-3. Build for production
+Visit:
 
 ```bash
-npm run build
-npm run preview
+http://localhost:3000
+```
+
+## 🔌 API Endpoints
+
+### Agents
+
+```http
+GET    /api/agents
+POST   /api/agents
+PUT    /api/agents/:id
+DELETE /api/agents/:id
+```
+
+### Conversations
+
+```http
+POST /api/chat
+POST /api/generate-response
+```
+
+### Voice
+
+```http
+POST /api/speech-to-text
+POST /api/text-to-speech
+GET  /api/voices
+```
+
+### Analytics
+
+```http
+GET /api/analytics
+```
+
+### System
+
+```http
+GET /api/health
+```
+
+## 🎯 Use Cases
+
+### Customer Support Agent
+
+Provide instant voice support for users.
+
+### AI Tutor
+
+Interactive educational assistant with natural conversations.
+
+### Interview Preparation
+
+Practice technical and behavioral interviews.
+
+### Personal Assistant
+
+Task management and daily productivity support.
+
+### Business Automation
+
+Voice-enabled workflows and operations.
+
+---
+
+## 📈 Performance Highlights
+
+* Real-time speech processing
+* Fast Gemini response generation
+* Low-latency voice playback
+* Scalable serverless architecture
+* Optimized Next.js rendering
+
+---
+
+## 🔒 Security
+
+* OAuth Authentication
+* Protected API Routes
+* Secure Secret Management
+* Input Validation
+* Rate Limiting Support
+
+---
+
+## 🧪 Testing
+
+```bash
+npm run test
+```
+
+```bash
+npm run test:watch
+```
+
+```bash
+npm run test:coverage
 ```
 
 ---
 
-**Project structure (important parts)**
-- `src/` — React source
-	- `components/` — UI + feature components (TaskBoard, ArchitectureTab, HealthDashboard)
-	- `pages/` — route pages (Landing, Onboard, Plan, Index)
-	- `lib/` — utilities & mock data
-- `public/` — static assets (favicon.svg, favicon.ico)
-- `index.html` — app entry (title, meta, fonts)
+## 🚀 Deployment
 
-**Scripts**
-- `npm run dev` — start Vite dev server
-- `npm run build` — production build
-- `npm run preview` — preview production build
-- `npm run lint` — run ESLint
+### Vercel (Recommended)
 
----
-
-**Architecture (high level)**
-
-```mermaid
-flowchart LR
-	A[User Browser]
-	A --> B(React UI)
-	B --> C{Core Features}
-	C --> D[Task Board]
-	C --> E[Architecture Tab]
-	C --> F[Health Dashboard]
-	B --> G[Theme Provider]
-	B --> H[Assets & Public]
-	B --> I[API / Services]
-	I --> J[Generative AI]
-	I --> K[Realtime DB (Supabase)]
-	I --> L[Storage / Exports]
-	style D fill:#ffffff,stroke:#7c3aed,stroke-width:1px
-	style E fill:#ffffff,stroke:#6366f1,stroke-width:1px
-	style F fill:#ffffff,stroke:#8b5cf6,stroke-width:1px
-	classDef accent fill:#7c3aed,stroke:#7c3aed,color:#fff;
+```bash
+vercel deploy
 ```
 
----
+Configure environment variables and deploy directly from GitHub.
 
-**Design & Colors**
-- Primary accent: `#7c3aed` (used across UI gradients and glow effects)
-- Light/dark themes are driven by CSS variables in `src/index.css`
+### Alternative Platforms
 
-**Notes & Next steps**
-- Add CI for linting and type checks
-- Provide API keys + env doc for Generative AI & Supabase (if used)
-- (Optional) Export PNG/ICO favicon variants added to `public/`
+* Railway
+* AWS
+* Render
+* Netlify
 
 ---
 
+## 🤝 Contributing
+
+```bash
+# Fork Repository
+
+# Create Branch
+git checkout -b feature/amazing-feature
+
+# Commit Changes
+git commit -m "Add amazing feature"
+
+# Push Branch
+git push origin feature/amazing-feature
+```
+
+Create a Pull Request and describe your changes.
 
 
+
+## 📜 License
+
+Licensed under the MIT License.
+
+---
 
