@@ -166,7 +166,7 @@ Auralis-AI/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/Pravehaspa/AURALIS-AI.git
+git clone https://github.com/Gupta-02/Hackrprix.git
 
 cd AURALIS-AI
 ```
