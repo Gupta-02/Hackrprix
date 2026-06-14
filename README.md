@@ -19,6 +19,10 @@ Powered by **Google Gemini**, **Sarvam AI**, and **ElevenLabs**, Auralis provide
 
 Whether you're building customer support assistants, personal AI companions, educational tutors, or business automation agents, Auralis AI delivers a seamless voice-first experience.
 
+
+<img width="1890" height="827" alt="image" src="https://github.com/user-attachments/assets/21c16766-220f-47b2-bc20-94cd15c5ac7a" />
+
+
 ---
 
 ## ✨ Features
@@ -30,12 +34,21 @@ Whether you're building customer support assistants, personal AI companions, edu
 * Continuous conversation flow
 * Multi-language speech support
 
+<img width="1872" height="715" alt="image" src="https://github.com/user-attachments/assets/5e08dc8b-264e-4cbe-af4f-6c6f1ddcf276" />
+
+### Dashboard
+
+<img width="1702" height="696" alt="image" src="https://github.com/user-attachments/assets/000c5c6d-b1c7-4ec8-8e1a-b2e0e3eaab9a" />
+
+
 ### 🧠 AI-Powered Intelligence
 
 * Google Gemini integration
 * Context-aware responses
 * Conversation memory
 * Dynamic prompt engineering
+
+
 
 ### 🤖 Custom Voice Agents
 
