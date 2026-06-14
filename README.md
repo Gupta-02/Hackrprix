@@ -36,9 +36,6 @@ Whether you're building customer support assistants, personal AI companions, edu
 
 <img width="1872" height="715" alt="image" src="https://github.com/user-attachments/assets/5e08dc8b-264e-4cbe-af4f-6c6f1ddcf276" />
 
-### Dashboard
-
-<img width="1702" height="696" alt="image" src="https://github.com/user-attachments/assets/000c5c6d-b1c7-4ec8-8e1a-b2e0e3eaab9a" />
 
 
 ### 🧠 AI-Powered Intelligence
@@ -64,12 +61,17 @@ Whether you're building customer support assistants, personal AI companions, edu
 * Human-like speech delivery
 * Configurable voice settings
 
+<img width="1652" height="817" alt="image" src="https://github.com/user-attachments/assets/fcf59010-260d-4780-8206-021ede906e9f" />
+
+
 ### 📊 Analytics Dashboard
 
 * Conversation tracking
 * Agent performance metrics
 * Usage insights
 * Interaction statistics
+
+<img width="1702" height="696" alt="image" src="https://github.com/user-attachments/assets/000c5c6d-b1c7-4ec8-8e1a-b2e0e3eaab9a" />
 
 ### 🔐 Secure & Scalable
 
